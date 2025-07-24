@@ -1,6 +1,7 @@
 const MotivationPage = () => {
     return (
         <>
+            
         </>
     )
 }
