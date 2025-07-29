@@ -20,9 +20,12 @@ const TaskForm = () => {
         dateOfTerminate: Yup.date(),
     })
     return (<>
-        <Formik initialValues={{ name: '', number: '' }} onSubmit={handleSubmit} validationSchema={validationSchema}>
-            <Form className="form-contact">
-
+        <Formik initialValues={{ task: '', dateOfTerminate: '' }} onSubmit={handleSubmit} validationSchema={validationSchema}>
+            <Form className="form-task">
+                <p className="form-task-enter-your-task">Enter your task</p>
+                <Field name="task"></Field>
+                <p className="form-task-enter-date-publication">Enter the date of publication</p>
+                <Field name="dateOfTerminate"></Field>
             </Form>
         </Formik>
     </>)
