@@ -1,7 +1,9 @@
 const HabitPage = () => {
     return (
         <>
-            <title>Your habits:</title>
+            <title>
+                Your habits:
+            </title>
         </>
     )
 }
