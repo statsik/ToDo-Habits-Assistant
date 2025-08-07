@@ -5,12 +5,12 @@ import { useSelector } from 'react-redux';
 import { selectIsLoggedIn } from '../../redux/auth/selectors.js';
 
 
-const AppBar = () => {
+const AppBar = () => {     
     const isLoggedIn = useSelector(selectIsLoggedIn)
     return (
-        <div className="appbar-container">
-            <NavLink to="/" className="Home-nav">Home</NavLink>
-            {isLoggedIn ? <UserMenu /> : <AuthNav />}
+        <div className="appbar-container">   
+            <NavLink to="/" className="Home-nav">Home</NavLink>  
+            {isLoggedIn ? <UserMenu /> : <AuthNav />}  
         </div>
     )
 }

@@ -7,9 +7,9 @@ const AuthNav = () => {
             <div className='authnav-container'>
                 <NavLink className="login-nav" to="/login">Log In</NavLink>
                 <NavLink className="register-nav" to="/register">Register</NavLink>
-            </div>
-        </>
-    )
-}
+            </div>  
+        </>   
+    )  
+}  
 
-export default AuthNav;
+export default AuthNav;  
