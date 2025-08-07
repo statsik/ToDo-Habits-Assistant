@@ -1,12 +1,14 @@
 import RegistrationForm from '../../components/registrationform/RegistrationForm.jsx';
-import './RegistrationPage.css'
+import css from './RegistrationPage.module.css'
+import '../../components/Container/Container'
+
 
 const RegistrationPage = () => {
     return (
-        <>
-            <title>Registration</title>
+        <Container>
+            <title className={css["p"]}>Registration</title>
             <RegistrationForm></RegistrationForm>
-        </>
+        </Container>
     )
 }
 

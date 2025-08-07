@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { register } from '../../redux/auth/operations';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import './RegistrationForm.css';
+import css from './RegistrationForm.module.css'
 
 const RegistrationForm = () => {
 
@@ -27,7 +27,7 @@ const RegistrationForm = () => {
 
     return(
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-        <Form className="registration-form-container" autoComplete="off">
+            <Form className={css["registration-form-container"]} autoComplete="off">
         <label className="registration-form-part">
             <p className="registration-form-name">Username</p>
             <Field type="text" name="name" />

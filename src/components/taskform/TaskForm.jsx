@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import './TaskForm.css'
+import css from './TaskForm.module.css'
 import { addTask } from "../../redux/tasks/operations";
 import * as Yup from 'yup';
 
@@ -21,7 +21,7 @@ const TaskForm = () => {
     })
     return (<>
         <Formik initialValues={{ task: '', dateOfTerminate: '' }} onSubmit={handleSubmit} validationSchema={validationSchema}>
-            <Form className="form-task">
+            <Form className={css["form-task"]}>
                 <p className="form-task-enter-your-task">Enter your task</p>
                 <Field name="task"></Field>
                 <p className="form-task-enter-date-publication">Enter the date of publication</p>

@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import './LoginForm.css'
+import css from './LoginForm.module.css'
 
 
 const LoginSchema = Yup.object().shape({
@@ -28,7 +28,7 @@ const LoginForm = () => {
     initialValues={{ email: "", password: "" }}
     validationSchema={LoginSchema}
     onSubmit={handleSubmit}>
-      <Form className="login-container" autoComplete="off">
+      <Form className={css["login-container"]} autoComplete="off">
         <label>
           <p className="login-part">Email</p>
           <Field type="email" name="email" />

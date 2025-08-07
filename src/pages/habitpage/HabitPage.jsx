@@ -1,10 +1,15 @@
+import '../../components/Container/Container'
+import css from './HabitPage.module.css'
+
 const HabitPage = () => {
     return (
-        <>
-            <title>
+        <Container>
+            <title className={css["p"]}>
                 Your habits:
+                
             </title>
-        </>
+        </Container>
+            
     )
 }
 

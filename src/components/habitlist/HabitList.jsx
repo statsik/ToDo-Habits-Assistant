@@ -1,7 +1,11 @@
-import './HabitList.css'
+import css from './HabitList.module.css'
 
 const HabitList = () => {
-    return(<></>)
+    return (
+        <>
+            <p className={css["p"]}></p>
+        </>
+    )
 }
 
 export default HabitList

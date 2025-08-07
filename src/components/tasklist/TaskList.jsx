@@ -1,9 +1,11 @@
-import './TaskList.css'
+import css from './TaskList.module.css'
 
 const TaskList = () => {
-    return(<>
-    
-    </>)
+    return (
+        <>
+            <p className={css["p"]}>Task List</p>
+        </>
+    )
 }
 
 export default TaskList;

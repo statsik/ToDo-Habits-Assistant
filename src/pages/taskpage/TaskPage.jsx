@@ -1,12 +1,16 @@
-import './TaskPage.css'
+import TaskForm from '../../components/taskform/TaskForm'
+import css from './TaskPage.module.css'
+import '../../components/Container/Container'
+
+
 
 const TaskPage = () => {
     return (
-        <>
-            <p>Your Tasks:</p>
-            <input></input>
-            <button>Add Task</button>
-        </>
+        <Container>
+            <p className={css["p"]}>Your Tasks:</p>
+            <TaskList />
+            <TaskForm />
+        </Container>
     )
 }
 

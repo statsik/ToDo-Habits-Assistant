@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux'
-import './UserMenu.css'
+import css from './UserMenu.module.css'
 import { selectUser } from '../../redux/auth/selectors'
 
 const UserMenu = () => {
     const name = useSelector(selectUser)
     return (
-        <div className="user-menu-container">
+        <div className={css["user-menu-container"]}>
             <p>Hello, {name.name}</p>
             
             <NavLink path="/tasks" className="task-page-nav">Tasks</NavLink>
