@@ -1,17 +1,18 @@
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import HomePage from '../../pages/homepage/homepage'
+import './App.module.css'
 import AppBar from '../appbar/AppBar'
-import TaskPage from '../../pages/taskpage/TaskPage'
-import HabitPage from '../../pages/habitpage/HabitPage'
-import MotivationPage from '../../pages/motivationpage/MotivationPage'
 import Loader from '../Loader/Loader'
+import { Suspense, lazy } from "react";
+
+const HomePage = lazy(() => import('../../pages/homepage/homepage'));
+const TaskPage = lazy(() => import('../../pages/taskpage/TaskPage'));
+const HabitPage = lazy(() => import('../../pages/habitpage/HabitPage'));
+const MotivationPage = lazy(() => import('../../pages/motivationpage/MotivationPage'));
 
 const App = () => {
 
   return (
     <>
-      
       <AppBar></AppBar>
       <Suspense fallback={<Loader />}>
         <Routes>

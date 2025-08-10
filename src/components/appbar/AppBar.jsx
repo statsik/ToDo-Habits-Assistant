@@ -1,4 +1,4 @@
-import './AppBar.css'
+import './AppBar.module.css'
 import UserMenu from '../UserMenu/UserMenu.jsx';
 import AuthNav from '../authnav/AuthNav.jsx';
 import { useSelector } from 'react-redux';
