@@ -1,0 +1,8 @@
+.authnav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-nav{
+    padding-right: 24px;
+}

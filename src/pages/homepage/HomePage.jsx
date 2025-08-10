@@ -1,6 +1,6 @@
 import AuthNav from '../../components/authnav/AuthNav';
+import Container from '../../components/Container/Container';
 import css from './HomePage.module.css'
-import '../../components/Container/Container'
 
 
 const HomePage = () => {
