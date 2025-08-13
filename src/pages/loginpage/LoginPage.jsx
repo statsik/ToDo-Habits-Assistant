@@ -6,7 +6,7 @@ import '../../components/Container/Container'
 const LoginPage = () => {
     return (
         <Container>
-            <LoginForm></LoginForm>
+            <LoginForm />
         </Container>
     )
 }

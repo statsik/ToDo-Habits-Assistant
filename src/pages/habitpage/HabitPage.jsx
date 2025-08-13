@@ -7,7 +7,7 @@ const HabitPage = () => {
         <Container>
             <title className={css["p"]}>
                 Your habits:
-                <HabitList></HabitList>
+                <HabitList />
             </title>
         </Container>
             

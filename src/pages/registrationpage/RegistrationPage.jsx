@@ -6,7 +6,7 @@ import '../../components/Container/Container'
 const RegistrationPage = () => {
     return (
         <Container>
-            <RegistrationForm></RegistrationForm>
+            <RegistrationForm />
         </Container>
     )
 }

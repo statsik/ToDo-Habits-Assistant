@@ -4,7 +4,7 @@ import Loader from '../Loader/Loader'
 import { Suspense, lazy } from "react";
 import Header from '../header/Header';
 
-const HomePage = lazy(() => import('../../pages/homepage/homepage'));
+const HomePage = lazy(() => import('../../pages/homepage/HomePage'));
 const TaskPage = lazy(() => import('../../pages/taskpage/TaskPage'));
 const HabitPage = lazy(() => import('../../pages/habitpage/HabitPage'));
 const MotivationPage = lazy(() => import('../../pages/motivationpage/MotivationPage'));

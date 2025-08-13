@@ -14,13 +14,15 @@ const MotivationList = () => {
             throw new Error('Error');
             }
             const data = await response.json();
-            setQuote(data[0]);
+            setQuote(data[Math.floor(Math.random() * data.length)]);
         } catch (err) {
             setError(err.message);
         }
         };
 
         fetchQuote();
+        const interval = setInterval(fetchQuote, 24 * 60 * 60 * 1000);
+        return () => clearInterval(interval); 
     }, []);
 
     if (error) {
@@ -32,7 +34,8 @@ const MotivationList = () => {
     }
     return (
         <div className={ css["motivation-list-container"]}>
-            <p className={css["p"]}>Motivation for today</p>
+            <p className={css["motivation-list-quote"]}>{quote.text}</p> 
+            <p className={css["motivation-list-quote-author"]}>{quote.author}</p>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import MotivationList from "../../components/motivationlist/MotivationList";
 import '../../components/Container/Container'
+import Container from "../../components/Container/Container";
 //import css from './MotivationPage.module.css'
 
 const MotivationPage = () => {
