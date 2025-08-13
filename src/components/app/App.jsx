@@ -5,6 +5,7 @@ import { Suspense, lazy } from "react";
 import Header from '../header/Header';
 import LoginPage from '../../pages/loginpage/LoginPage';
 import RegistrationPage from '../../pages/registrationpage/RegistrationPage';
+import RestrictedRoute from '../../RestrictedRoute';
 
 const HomePage = lazy(() => import('../../pages/homepage/HomePage'));
 const TaskPage = lazy(() => import('../../pages/taskpage/TaskPage'));
@@ -19,8 +20,15 @@ const App = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/register" element={<RegistrationPage />} />
-          <Route path="/login" element={<LoginPage/>}/>
+          <Route path="/register" element={
+            <RestrictedRoute
+                  redirectTo="/tasks" component={<RegistrationPage />}
+            />}
+          />
+          <Route path="/login" element={
+            <RestrictedRoute redirectTo="/tasks" component={<LoginPage />}
+            />}
+          />
           <Route path="/tasks" element={<TaskPage />}/>
           <Route path="/habits" element={<HabitPage/>}/>
           <Route path="/motivation" element={<MotivationPage/>}/>
