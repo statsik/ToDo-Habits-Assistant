@@ -10,7 +10,7 @@ const AppBar = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn)
     return (
         <div className={css["appbar-container"]}>   
-            <NavLink to="/" className="Home-nav">Home</NavLink>  
+            <NavLink to="/" className={css["home-nav-button"]}>Home</NavLink>  
             {isLoggedIn ? <UserMenu /> : <AuthNav />}  
         </div>
     )

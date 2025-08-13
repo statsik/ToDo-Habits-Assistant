@@ -12,7 +12,6 @@ const HomePage = () => {
             </span>
             <p>Simple and intuitive task management for everyday productivity.</p>
             <p>Get started for free — create your first task in seconds.</p>
-            <AuthNav />
         </Container>
     )
 }

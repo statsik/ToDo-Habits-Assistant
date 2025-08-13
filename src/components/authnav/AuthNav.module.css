@@ -3,5 +3,23 @@
     align-items: center;
 }
 .login-nav{
-    padding-right: 24px;
+    margin-right: 24px;
+}
+.register-nav, 
+.login-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    min-height: 36px;
+    padding: 0 .9rem;
+
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: var(--btn-shadow);
+    cursor: pointer;
+    transition: transform .15s ease, background-color .2s ease, box-shadow .2s ease;
 }

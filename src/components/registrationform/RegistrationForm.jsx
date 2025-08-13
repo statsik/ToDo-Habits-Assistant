@@ -28,22 +28,22 @@ const RegistrationForm = () => {
     return(
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             <Form className={css["registration-form-container"]} autoComplete="off">
-        <label className="registration-form-part">
-            <p className="registration-form-name">Username</p>
+                <label className={css["registration-form-part"]}>
+                    <p className={css["registration-form-name"]}>Username</p>
             <Field type="text" name="name" />
             <ErrorMessage name="name" component="div" style={{ color: "red" }} />
         </label>
-        <label className="registration-form-part">
-            <p className="registration-form-name">Email</p>
+                <label className={css["registration-form-part"]}>
+                    <p className={css["registration-form-name"]}>Email</p>
             <Field type="email" name="email" />
             <ErrorMessage name="email" component="div" style={{ color: "red" }} />
         </label>
-        <label className="registration-form-part">
-            <p className="registration-form-name">Password</p>
+                <label className={css["registration-form-part"]}>
+                    <p className={css["registration-form-name"]}>Password</p>
             <Field type="password" name="password" />
             <ErrorMessage name="password" component="div" style={{ color: "red" }} />
         </label>
-        <button type="submit">Register</button>
+        <button type="submit" className={css["registration-form-button"]}>Register</button>
         </Form>
         </Formik>
     )

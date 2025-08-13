@@ -1,6 +1,57 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/manrope-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/manrope-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/merienda-v21-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/manrope-v19-cyrillic_latin-800.woff2') format('woff2');
+}
+
+:root{
+  --font-family: 'Manrope', sans-serif;
+  --secondary-font-family: 'Merienda', sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --font-size: 16px;
+  --btn-bg: #4f46e5;
+  --btn-bg-hover: #4338ca;
+  --btn-fg: #ffffff;
+  --btn-shadow: 0 6px 16px rgba(0,0,0,.08);
+  
+  --color: #040426;
+  --background-color: #e4faef;
+}
+
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  color: var(--color);
+  background-color: var(--background-color);
 }
 
 h1,
@@ -22,4 +73,25 @@ ol {
 img {
   display: block;
   max-width: 100%;
+}
+
+input {
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --input-border-focus: #4f46e5;
+  --input-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background: var(--input-bg);
+  font-size: 1rem;
+  outline: none;
+  box-shadow: var(--input-shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: var(--input-border-focus);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
 }

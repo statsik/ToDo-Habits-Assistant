@@ -10,7 +10,7 @@ const UserMenu = () => {
             
             <NavLink path="/tasks" className="task-page-nav">Tasks</NavLink>
             <NavLink path="/habits" className="habit-page-nav">Habits</NavLink>
-            <NavLink path="/motivation" className="habit-page-nav">Motivation</NavLink>
+            <NavLink path="/motivation" className="motivation-page-nav">Motivation</NavLink>
         </div>
     )
 }
