@@ -1,6 +1,6 @@
 import css from './AppBar.module.css'
-import UserMenu from '../UserMenu/UserMenu.jsx';
-import AuthNav from '../authnav/AuthNav.jsx';
+import UserMenu from '../Usermenu/UserMenu.jsx';
+import AuthNav from '../Authnav/AuthNav.jsx';
 import { useSelector } from 'react-redux';
 import { selectIsLoggedIn } from '../../redux/auth/selectors.js';
 import { NavLink } from 'react-router-dom';

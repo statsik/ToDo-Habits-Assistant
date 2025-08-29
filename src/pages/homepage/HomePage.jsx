@@ -1,4 +1,4 @@
-import AuthNav from '../../components/authnav/AuthNav';
+import AuthNav from '../../components/Authnav/AuthNav';
 import Container from '../../components/Container/Container';
 import css from './HomePage.module.css'
 

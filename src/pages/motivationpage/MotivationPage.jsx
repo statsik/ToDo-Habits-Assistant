@@ -1,4 +1,4 @@
-import MotivationList from "../../components/motivationlist/MotivationList";
+import MotivationList from "../../components/Motivationlist/MotivationList";
 import '../../components/Container/Container'
 import Container from "../../components/Container/Container";
 //import css from './MotivationPage.module.css'

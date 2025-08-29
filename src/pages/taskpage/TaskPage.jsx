@@ -1,4 +1,4 @@
-import TaskForm from '../../components/taskform/TaskForm'
+import TaskForm from '../../components/Taskform/TaskForm'
 //import css from './TaskPage.module.css'
 import '../../components/Container/Container'
 

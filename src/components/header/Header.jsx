@@ -1,4 +1,4 @@
-import Container from '../Container/Container';
+import Container from '../Container/Container.jsx';
 import css from './Header.module.css'
 import AppBar from '../appbar/AppBar.jsx';
 

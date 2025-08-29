@@ -1,6 +1,6 @@
 import '../../components/Container/Container'
 import css from './HabitPage.module.css'
-import HabitList from '../../components/habitlist/HabitList'
+import HabitList from '../../components/Habitlist/HabitList'
 
 const HabitPage = () => {
     return (
