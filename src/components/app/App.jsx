@@ -2,11 +2,11 @@ import { Route, Routes } from 'react-router-dom'
 import './App.module.css'
 import Loader from '../Loader/Loader.jsx'
 import { Suspense, lazy } from "react";
-import Header from '../Header/Header.jsx';
 import LoginPage from '../../pages/Loginpage/LoginPage.jsx';
 import RegistrationPage from '../../pages/Registrationpage/RegistrationPage.jsx';
 import RestrictedRoute from '../../RestrictedRoute.jsx';
 
+const Header = lazy(() => import('../Header/Header.jsx'));
 const HomePage = lazy(() => import('../../pages/Homepage/HomePage'));
 const TaskPage = lazy(() => import('../../pages/Taskpage/TaskPage'));
 const HabitPage = lazy(() => import('../../pages/Habitpage/HabitPage'));
