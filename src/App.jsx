@@ -1,16 +1,16 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.module.css'
-import Loader from '../Loader/Loader.jsx'
+import Loader from './components/Loader/Loader.jsx'
 import { Suspense, lazy } from "react";
-import RestrictedRoute from '../../RestrictedRoute.jsx';
+import RestrictedRoute from './RestrictedRoute.jsx';
 
-const Header = lazy(() => import('../Header/Header.jsx'));
-const HomePage = lazy(() => import('../../pages/Homepage/HomePage'));
-const TaskPage = lazy(() => import('../../pages/Taskpage/TaskPage'));
-const HabitPage = lazy(() => import('../../pages/Habitpage/HabitPage'));
-const MotivationPage = lazy(() => import('../../pages/Motivationpage/MotivationPage'));
-const LoginPage = lazy(() => import('../../pages/Loginpage/LoginPage.jsx'));
-const RegistrationPage = lazy(() => import('../../pages/Registrationpage/RegistrationPage.jsx'));
+const Header = lazy(() => import('../src/components/Header/Header.jsx'));
+const HomePage = lazy(() => import('../src/pages/Homepage/HomePage.jsx'));
+const TaskPage = lazy(() => import('../src/pages/Taskpage/TaskPage.jsx'));
+const HabitPage = lazy(() => import('../src/pages/Habitpage/HabitPage.jsx'));
+const MotivationPage = lazy(() => import('../src/pages/Motivationpage/MotivationPage.jsx'));
+const LoginPage = lazy(() => import('../src/pages/Loginpage/LoginPage.jsx'));
+const RegistrationPage = lazy(() => import('../src/pages/Registrationpage/RegistrationPage.jsx'));
 
 const App = () => {
 
